@@ -39,4 +39,11 @@ public interface AccountDao {
      * @param id
      */
     void delete(int id);
+
+    /**
+     * 根据名字查找账户
+     * @param accountName
+     * @return
+     */
+    Account findByName(String accountName);
 }

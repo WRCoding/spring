@@ -41,4 +41,12 @@ public interface AccountService {
      * @param id
      */
     void delete(int id);
+
+    /**
+     * 转账
+     * @param sourceName
+     * @param destName
+     * @param money
+     */
+    void transfer(String sourceName,String destName,float money);
 }
